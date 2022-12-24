@@ -1,0 +1,293 @@
+.header__container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header__row {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.header__logo {
+  width: 164px;
+  height: 80px;
+  margin-right: auto;
+}
+
+.header__wrapper {
+  display: flex;
+  gap: 118px;
+  align-items: center;
+}
+
+.navigation__list {
+  display: flex;
+  gap: 56px;
+}
+
+.navigation__link {
+  position: relative;
+  line-height: 16px;
+}
+
+.navigation__link::after {
+  position: absolute;
+  outline: none;
+  content: '';
+  width: 1%;
+  height: 1px;
+  margin: 0 auto;
+  top: 22px;
+  left: 0;
+  right: 0;
+  background-color: var(--black);
+  opacity: 0;
+  transition-duration: 0.4s;
+}
+
+.navigation__link:hover::after {
+  width: 100%;
+  opacity: 1;
+  border: none;
+}
+
+.navigation__link_active {
+  pointer-events: none;
+}
+
+.navigation__link_active::after {
+  width: 100%;
+  opacity: 1;
+  border: none;
+}
+
+.header__inner {
+  display: flex;
+  gap: 0 56px;
+}
+
+.header__comminication {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+}
+
+.communication__phone {
+  color: #363431;
+  line-height: 0;
+}
+
+.communication__phone:hover {
+  color: #727272;
+}
+
+.communication__whatsapp {
+  color: #00E676;
+  line-height: 0;
+}
+
+.communication__whatsapp:hover {
+  color: #018143;
+}
+
+.communication__text {
+  line-height: 16px;
+}
+
+
+.address__img {
+  width: 24px;
+  height: 24px;
+}
+
+.address__text {
+  font-size: 14px;
+  line-height: 150%;
+  max-width: 372px;
+
+}
+
+.header__address {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+
+.mobile__burger, .burger__close, .mobile__price {
+  display: none;
+}
+
+@media (max-width:1760px) {
+
+  .navigation__list {
+    gap: 40px;
+  }
+
+  .header__wrapper {
+    gap: 58px;
+  }
+
+  .header__inner {
+    gap: 0 36px;
+  }
+
+}
+
+@media (max-width:1540px) {
+
+  .navigation__list {
+    gap: 20px;
+  }
+
+  .header__wrapper {
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    justify-content: center;
+    max-width: 800px;
+  }
+
+  .header__address {
+    text-align: center;
+  }
+
+  .header__inner {
+    gap: 1px 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .address__text {
+    max-width: none;
+  }
+}
+
+@media (max-width:1100px) {
+  .header__wrapper {
+    display: grid;
+  }
+
+  .header__navigation {
+    justify-self: center;
+  }
+
+  .header__inner {
+    display: grid;
+  }
+
+  .header__comminication {
+    justify-self: center;
+    grid-row: 2;
+  }
+}
+
+@media (max-width:815px) {
+
+  .header__row {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .mobile__burger {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .mobile__price {
+    display: block;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 6px 10px;
+  }
+
+  .header__container {
+    padding: 13px 16px;
+    align-items: center;
+    column-gap: 20px;
+    box-shadow: none;
+  }
+
+
+  .header__logo {
+    width: 94px;
+    height: 46px;
+    margin-right: 0;
+  }
+
+  .header__wrapper {
+    position: fixed;
+    left: -288px;
+    top: 130px;
+    height: 350px;
+    width: 288px;
+    transform: translateX(0);
+    background: #FFFFFF;
+    border-radius: 16px;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 50px;
+    display: block;
+    text-align: center;
+    transition: transform 0.4s ease-in-out;
+    z-index: 100;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .burger_active {
+    transform: translateX(304px);
+  }
+
+  .burger__close {
+    position: absolute;
+    display: block;
+    top: 10px;
+    right: 10px;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border: none;
+    color: var(--black);
+  }
+
+  .navigation__list {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    margin-bottom: 15px;
+    display: block;
+    align-items: center;
+  }
+
+  .navigation__link {
+    display: block;
+    padding: 7px 14px;
+  }
+
+  .navigation__link_active {
+    background-color: rgb(225, 230, 235);
+    pointer-events: none;
+  }
+
+  .navigation__link::after {
+    display: none;
+  }
+
+  .header__comminication {
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 0;
+  }
+
+  .header__address {
+    display: none;
+  }
+}

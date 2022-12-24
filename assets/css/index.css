@@ -1,0 +1,22 @@
+@import "./normalize.css";
+@import "./default.css";
+@import "./fonts.css";
+@import "./variables.css";
+@import "./swiper-bundle.min.css";
+@import "./leaflet.css";
+
+@import "./modules/header.css";
+@import "./modules/footer.css";
+@import "./modules/modal.css";
+@import "./modules/breadcrumb.css";
+
+@import "./modules/index/hero.css";
+@import "./modules/index/about.css";
+@import "./modules/index/we-help.css";
+@import "./modules/index/stock.css";
+
+@import "./modules/services/services.css";
+@import "./modules/price/price.css";
+@import "./modules/contacts/contacts.css";
+@import "./modules/stocks/stocks.css";
+@import "./modules/service/service.css";
