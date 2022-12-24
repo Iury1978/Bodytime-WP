@@ -3,7 +3,7 @@
 
 function bodytime_assets() {
 
-    wp_enqueue_style( 'indexcss', get_template_directory_uri() . '/assets/css/indexall.css' );
+    wp_enqueue_style( 'indexcss', get_template_directory_uri() . '/assets/css/index.css' );
 wp_enqueue_script( 'index', get_template_directory_uri() . '/assets/js/index.min.js', array(), '20151215', true );
 
 

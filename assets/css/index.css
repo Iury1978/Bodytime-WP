@@ -2,8 +2,6 @@
 @import "./default.css";
 @import "./fonts.css";
 @import "./variables.css";
-@import "./swiper-bundle.min.css";
-@import "./leaflet.css";
 
 @import "./modules/header.css";
 @import "./modules/footer.css";
