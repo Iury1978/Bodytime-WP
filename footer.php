@@ -1,10 +1,10 @@
   <footer class="footer">
     <div class="container footer__container">
       <ul class="footer__items">
-        <li class="footer__item"><a href="./services.html" class="footer__link">Наши услуги</a> </li>
-        <li class="footer__item"><a href="./stocks.html" class="footer__link">Акции</a> </li>
-        <li class="footer__item"><a href="./price.html" class="footer__link">Прайс</a> </li>
-        <li class="footer__item"><a href="./contacts.html" class="footer__link">Контакты</a> </li>
+        <li class="footer__item"><a href="./services" class="footer__link">Наши услуги</a> </li>
+        <li class="footer__item"><a href="./stocks" class="footer__link">Акции</a> </li>
+        <li class="footer__item"><a href="./price" class="footer__link">Прайс</a> </li>
+        <li class="footer__item"><a href="./contacts" class="footer__link">Контакты</a> </li>
       </ul>
       <div class="footer__about">
         <h3 class="footer__about-title">О нас</h3>
